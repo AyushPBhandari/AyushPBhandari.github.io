@@ -220,44 +220,46 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Named Entity Recognition (NER) and Relation Extraction (RE) from Patient’s Medical Notes
-            <a href="https://github.com/viralpandey/ehr-relation-extraction">
+            <h3 class="mb-0">Image De-Identification Using Deep Learning
+            <a href="https://github.com/AyushPBhandari/imagedeidentification">
               <i class="fab fa-github"></i></a></h3>
               <ul>
-                <li>Highlighted entities like Drugs, Adverse effect, Dosage, Reason, etc and mapped the Drug entity with all other entities to create a structured data table out of unstructured notes</li>
-                <li>Achieved 90% micro-F1 score for NER and RE using BioBERT and BiLSTM+CRF models</li>
-                <li>Built a <a href="ehr/ehr.html">website</a> and APIs to get model predictions using FastAPI and hosted them on Google Cloud Platform</li>
+                <li>Detected faces and estimated pose using Tencent DSFD and Mask R-CNN respectively</li>
+                <li>Created GAN using U-NET architecture for anonymizing images retaining gender, background and ethnic information</li>
+                <li>Achieved similarity of less than 0.3 on matching the original and anonymized image using Microsoft Cognitive Services Face API</li>
+                <li>Deployed the model on AWS EC2 instance using Flask microframework</li>
               </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Jan - Mar 2019</span>
+            <span class="text-primary">Sep - Dec 2020</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Quora Insincere Question Classification
-            <a href="https://github.com/viralpandey/quora_insincere_text_classification">
+            <h3 class="mb-0">Question Answer Modeling on SQuAD Dataset
+            <a href="https://github.com/AyushPBhandari/QAModelingUsingDeepLearning">
               <i class="fab fa-github"></i></a></h3>
               <ul>
-                <li>Designed a supervised binary classifier to detect insincere questions on the Quora website and compared performances of algorithms such as SVM, CNN and LSTM RNN</li>
-                <li>Performed TF-IDF vectorization, Sentiment Analysis using Python NLTK framework for gauging overall sentiment</li>
+                <li>Designed a baseline embedding + extraction model for answering questions specific to a context based on cosine similarity and named entity recognition thereby acquiring F1 score of 0.46 on where, when and who questions</li>
+                <li>Restructured baselined model utilizing BiDAF for improving answer span to contain the specific portion of context thus attaining F1 0.58 for 0.1 learning rate and 30 epochs</li>
               </ul>
           </div>
 
           <div class="resume-date text-md-right">
-            <span class="text-primary">Jan - Mar 2019</span>
+            <span class="text-primary">Sep - Dec 2019</span>
           </div>
         </div>
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Bankruptcy Prediction Using Various Classifiers
-            <a href="https://github.com/viralpandey/bankruptcy_prediction">
+            <a href="https://github.com/AyushPBhandari/BankruptcyPrediction">
               <i class="fab fa-github"></i></a></h3>
               <ul>
-                <li>Tested Logistic Regression, Naive Bayes, LDA, QDA, SVM and feed forward Neural Networks on 5 years of Polish Companies Data of different econometric ratios to determine whether a company is going to go bankrupt</li>
+                <li>Analyzed 5 years of Polish companies’ dataset, containing 64 econometric ratios to determine whether a company is going to go bankrupt</li>
                 <li>Handled missing data using Mean value Imputation and SMOTE on training data to handle class imbalance</li>
-                <li>Calculated Correlation matrix, performed PCA and cross validation for feature sub-setting</li>
+                <li>Fit Logistic Regression, Naïve Bayes, LDA, QDA, SVM and Neural Networks to compare various classification techniques</li>
+                <li>Achieved highest F1 Score of 0.8 with QDA</li>
               </ul>
           </div>
 
@@ -268,19 +270,55 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Analysis of NHIS data and building associated software components
-            <a href="https://github.com/viralpandey/Analysis-of-NHIS-data-and-building-associated-software-components">
+            <h3 class="mb-0">Multi Label Classification fo Yelp Image Dataset
+            <a href="https://github.com/AyushPBhandari/Yelp-Restraunt-Photo-Classification">
               <i class="fab fa-github"></i></a></h3>
               <ul>
-                <li>Developed a R package, performed exploratory data analysis to find correlation between different variables</li>
-                <li>Developed a conversational chat bot which can show the analysis as visualizations using Node.js, R, Dialogflow and AmazonS3Services</li>
+                <li>Implemented CNN-RNN with SPP (Spatial Pyramid Pooling) to classify businesses using images</li>
+                <li>Compared performances of AlexNet, AlexNet-RNN with and without SPP using F1 score as a criterion where AlexNet-RNN with a score of 0.72 predicted best sequence of labels</li>
               </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">Nov - Dec 2018</span>
+            <span class="text-primary">Jan - Mar 2019</span>
           </div>
 
         </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">LDA Topic Modeling on Amazon Reviews
+            <a href="https://github.com/AyushPBhandari/LDA-Topic-Modeling-Of-Amazon-Reviews">
+              <i class="fab fa-github"></i></a></h3>
+              <ul>
+                <li>Determined the hyperparameters (α,η) via grid search with NPMI and perplexity as the evaluation metrics</li>
+                <li>Performed LDA on the training data set and transformed the LDA model to the test dataset to get the soft assignments with α,η as 0.01 each</li>
+                <li>Repeated the process by varying number of topics(n) to achieve the optimum number of topics i.e. 20 </li>
+                <li>Performed T-SNE and used PyLDAvis to visualize the LDA results inferring that NPMI has a better correlation to human coherence than perplexity</li>
+              </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Sep - Dec 2018</span>
+          </div>
+
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Analysis of PARCC Standardized Test Scores
+            <a href="https://github.com/AyushPBhandari/Analysis-of-PARCC-Standardized-Test-Scores">
+              <i class="fab fa-github"></i></a></h3>
+              <ul>
+                <li>Analyzed education data of Colorado, Washington DC and Massachusetts to find the variables that affect PARCC scores the most</li>
+                <li>Developed linear regression models that predict PARCC test proficiency as a function of the variables of interest</li>
+                <li>Secured RMSE of 15.9%, 15.5% and 14.2% for DC, Colorado and Massachusetts respectively</li>
+              </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Sep - Dec 2018</span>
+          </div>
+
+        </div>
+
     </section>
 
     <hr class="m-0">
